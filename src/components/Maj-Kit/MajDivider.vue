@@ -27,14 +27,14 @@ export default {
 
 <style lang="scss">
 .maj-divider {
-  background: $dark;
+  background: #707070;
   &__horizontal {
-    height: 2px;
-    // width: 100%;
+    height: 1px;
+    width: 100%;
   }
   &__vertical {
-    min-width: 2px;
-    // height: 100%;
+    min-width: 1px;
+    height: 100%;
   }
 }
 </style>
