@@ -15,9 +15,9 @@ export default {
   width: 100vw;
   padding: 50px 0 30px;
   flex-grow: 1;
-  background: $lPrimary;
+  background: $bg;
   .maj-title {
-    color: $light;
+    color: $bg;
   }
 }
 </style>
