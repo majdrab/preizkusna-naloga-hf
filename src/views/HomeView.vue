@@ -19,9 +19,15 @@
             <line x1="0.726562" y1="19.7871" x2="18.6642" y2="19.7871" stroke="white" stroke-width="2"/>
         </svg>
     </div>
+    <div class="home__line-hide"></div>
     <MajContainer vertical class="home" centerX>
-        <div class="home__desc"><p>We’re a dynamic group enjoying healthy growth. As a fast-growing group, it regularly needs to add a member to its workforce. As a result there are jobs available regularly, both to full-time employees and to students seeking internships. We offer a unique glimpse into the world of development, marketing, technology, IT, and servers.</p></div>
-        <div class="home__desc"><p class="home__mid-titles">vacancies</p></div>
+        <div class="home__desc">
+            <div class="home__desc-line"></div>
+            <p>We’re a dynamic group enjoying healthy growth. As a fast-growing group, it regularly needs to add a member to its workforce. As a result there are jobs available regularly, both to full-time employees and to students seeking internships. We offer a unique glimpse into the world of development, marketing, technology, IT, and servers.</p>
+        </div>
+        <div class="home__desc">
+            <p class="home__mid-titles">vacancies</p>
+        </div>
         <MajContainer class="home__job-overview">
             <section class="home__job-overview-left">
                 <router-link 
@@ -207,7 +213,7 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 13.5% 2.7%;
+    margin: 13.5% 2.8%;
   }
   &__menu-icon {
     position: absolute;
@@ -219,15 +225,34 @@ export default {
     top: 0;
     cursor: pointer;
   }
+  &__line-hide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 600px;
+    width: 2.7%;
+    background: $bg;
+    z-index: 1;
+  }
   &__desc {
     width: 1032.68px;
     padding: 18.39px 0;
     max-width: calc(100% - 5.4%);
+    position: relative;
     p {
       font-size: 22px;
       line-height: 130%;
       color: #FFFFFF;
       width: 63.4%;
+    }
+    &-line {
+      position: absolute;
+      right: 102%;
+      margin-left: 2.7%;
+      margin-top: 12px;
+      width: 35.6%;
+      // width: 19.4%;
+      border-bottom: 1px solid #FFFFFF;
     }
   }
   p.home__mid-titles {
