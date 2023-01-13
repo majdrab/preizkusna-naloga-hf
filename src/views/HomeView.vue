@@ -4,11 +4,21 @@
         title="COMPANY"
         to="/"
     >
-        company
+        <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.40234 11.6133L2.96094 6.39063L8.40234 1.16797L7.36328 0.101563L0.800781 6.39063L7.36328 12.6797L8.40234 11.6133ZM20.625 5.65234L20.625 7.12891L19.1484 7.12891L19.1484 5.65234L20.625 5.65234ZM17.6445 5.65234L17.6445 7.12891L16.1406 7.12891L16.1406 5.65234L17.6445 5.65234ZM14.6367 5.65234L14.6367 7.12891L13.1328 7.12891L13.1328 5.65234L14.6367 5.65234ZM11.6289 5.65234L11.6289 7.12891L10.125 7.12891L10.125 5.65234L11.6289 5.65234ZM8.64844 5.65234L8.64844 7.12891L7.14453 7.12891L7.14453 5.65234L8.64844 5.65234ZM5.64063 5.65234L5.64063 7.12891L4.13672 7.12891L4.13672 5.65234L5.64063 5.65234Z" fill="white"/>
+        </svg>
+        <span>company</span>
     </router-link>
     <MajTitle is="h1" class="home__title">
         Careers
     </MajTitle>
+    <div class="home__menu-icon">
+        <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.726562" y1="1.5" x2="22.5007" y2="1.5" stroke="white" stroke-width="2"/>
+            <line x1="0.726562" y1="10.6433" x2="14.4015" y2="10.6433" stroke="white" stroke-width="2"/>
+            <line x1="0.726562" y1="19.7871" x2="18.6642" y2="19.7871" stroke="white" stroke-width="2"/>
+        </svg>
+    </div>
     <MajContainer vertical class="home" centerX>
         <div class="home__desc"><p>We’re a dynamic group enjoying healthy growth. As a fast-growing group, it regularly needs to add a member to its workforce. As a result there are jobs available regularly, both to full-time employees and to students seeking internships. We offer a unique glimpse into the world of development, marketing, technology, IT, and servers.</p></div>
         <div class="home__desc"><p class="home__mid-titles">vacancies</p></div>
@@ -170,20 +180,27 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 7.6% 6%;
-
-    display: inline-block;
-    padding: 2px 0;
-    border-bottom: 1px dashed #FFFFFF;
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    line-height: 120%;
-    color: #FFFFFF;
+    margin: 7.6% 4%;
     cursor: pointer;
-    text-transform: uppercase;
+    span {
+      display: inline-block;
+      padding: 2px 0;
+      margin-left: 9px;
+      border-bottom: 1px dashed #FFFFFF;
+      font-size: 12px;
+      line-height: 120%;
+      letter-spacing: 0.15em;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    }
+    // svg {
+    //   margin-top: 3px;
+    // }
     &:hover {
-      color: #DDDFDF;
-      border-bottom: 1px dashed #DDDFDF;
+      span {
+        color: #DDDFDF;
+        border-bottom: 1px dashed #DDDFDF;
+      }
     }
   }
   &__title {
@@ -191,6 +208,16 @@ export default {
     left: 0;
     top: 0;
     margin: 13.5% 2.7%;
+  }
+  &__menu-icon {
+    position: absolute;
+    aspect-ratio: 23/21;
+    margin-top: 2.7%;
+    margin-right: 2.7%;
+    width: 1.4%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
   }
   &__desc {
     width: 1032.68px;
