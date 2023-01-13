@@ -15,9 +15,11 @@ export default {
 
 <style lang="scss">
 h1.maj-title  {
-  font-size: 3rem;
-  line-height: 3.6rem;
-  font-weight: 500;
+  font-family: 'Dala Floda Web';
+  font-style: normal;
+  font-size: 70px;
+  line-height: 90%;
+  font-weight: 700;
 }
 h2.maj-title  {
   font-size: 2rem;
