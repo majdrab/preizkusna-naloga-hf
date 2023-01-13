@@ -20,6 +20,7 @@ h1.maj-title  {
   font-size: 70px;
   line-height: 90%;
   font-weight: 700;
+  color: #FFFFFF;
 }
 h2.maj-title  {
   font-size: 2rem;
@@ -27,7 +28,7 @@ h2.maj-title  {
   font-weight: 500;
 }
 h3.maj-title  {
-  font-family: 'Gotham_KTR';
+  font-family: 'Gotham_KTR--medium';
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
