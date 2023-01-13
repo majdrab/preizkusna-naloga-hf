@@ -1,6 +1,7 @@
 <template>
     <footer class="footer">
-
+        <div class="footer__margin"></div>
+        <div class="footer__content"></div>
     </footer>
 </template>
 
@@ -15,7 +16,12 @@ export default {
 <style lang="scss">
 .footer {
   width: 100vw;
-  height: 462.05px;
+  height: calc(462.05px + 124px);
   background: #1B2626;
+  &__margin {
+    width: 100%;
+    height: 124px;
+    background: $bg;
+  }
 }
 </style>
